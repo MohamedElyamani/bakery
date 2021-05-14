@@ -1,0 +1,385 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+/* start global style */
+ul
+{
+    list-style: none;
+}
+:root
+{
+    --mainColor: #8E7754;
+    --colorText: #303030;
+}
+.icon i
+{
+    flex-basis: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.col h1
+{
+    font-size: 2em;
+    color: var(--colorText);
+}
+.col p
+{
+    line-height: 2;
+    font-size: 20px;
+    color: var(--colorText);
+}
+.container
+{
+    padding: 0px 10px;
+    margin: 0px auto;
+}
+@media (min-width: 768px)
+{
+    .container 
+    {
+        width: 750px;
+    }
+}
+@media (min-width: 992px)
+{
+    .container 
+    {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .container 
+    {
+        width: 1170px;
+    }
+}
+/* end global style */
+header
+{
+    background-color: #0000006b;
+    height: 100vh;
+    color: #fff;
+}
+.blur
+{
+    background: url(../img/bg-header.jpg);
+    background-size: 100% 100%;
+    background-position:  center center;
+    height: 100vh;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* start logo */
+.container nav .logo 
+{
+    display: inline-flex;
+}
+.container nav .logo h1
+{
+    font-size: 35px;
+}
+.container nav .logo img
+{
+    width: 55px;
+}
+/* end logo  */
+
+/* start links  */
+.container nav .links li
+{
+    display: inline-flex;
+    margin-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container nav .links li:hover
+{
+  color:var(--mainColor) ;  
+}
+/* end links  */
+
+/* start text of header */
+header .container .text-of-header
+{
+    text-align: center;
+    padding-top: 10%;
+}
+header .container .text-of-header p
+{
+    font-size: 25px;
+}
+header .container .text-of-header h1
+{
+    font-size: 76px;
+    margin: 0 0 18px;
+}
+header .container .text-of-header button
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin: 50px 10px;
+    padding: 20px;
+    width: 15%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+header .container .text-of-header .btn-1
+{
+    background: var(--mainColor);
+    border: 3px solid var(--mainColor);
+}
+header .container .text-of-header .btn-2
+{
+    background: transparent;
+    border: 3px solid #fff;
+}
+header .container .text-of-header button:hover 
+{
+    background: #fff;
+    color: #000;
+    border: 3px solid #fff;
+}
+/* end text of header */
+
+
+
+/* start who are we  */
+.who-we-are 
+{
+    padding-top: 5%;
+}
+.who-we-are .who-we-are-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.who-we-are .who-we-are-content .col-img img
+{
+    width: 400px;
+    height: 450px;
+}
+.who-we-are-content .col .icon 
+{
+    display: flex;
+    margin-top: 20px;
+}
+.who-we-are-content .col .icon i
+{
+    color: var(--mainColor);
+    border: 1px solid gray;
+}
+.who-we-are-content .col .icon p
+{
+    margin-left: 15px;
+}
+/* end who are we  */
+
+/* start location */
+.location
+{
+    margin-top: 5%;
+    padding-top: 5%;
+    background: #F8F8F8;
+}
+.location-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.location-content .col-img img
+{
+    width: 500px;
+    height: 450px;
+}
+/* end location */
+
+/* start baking */
+.baking
+{
+    padding-top: 5%;
+}
+.baking .title
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.baking-content 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.baking-content .serv img
+{
+    max-width: 100%;
+}
+.baking-content .serv .text-baking
+{
+    text-align: center;
+    
+}
+.baking-content .serv .text-baking h3
+{
+    color: var(--colorText);
+    margin-top: 15px;
+    font-size: 25px;
+}
+.baking-content .serv .text-baking p
+{
+    color: var(--colorText);
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* end baking */
+/* start contact */
+
+.contact
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.contact-content
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.contact-content .icon h1
+{
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+.contact-content .icon 
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-content .icon i
+{
+    color: #fff;
+    background: var(--mainColor);
+}
+.contact-content .icon p
+{
+    margin-left: 30px;
+}
+/* end contact */
+
+/* start footer  */
+footer
+{
+    background: #403D38;
+}
+.foot-content
+{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 5% 0;
+}
+.foot-content .foot h2
+{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.foot-content .foot p, i
+{
+    line-height: 1.6;
+    color: #8C8A86;
+    display: inline-flex;
+}
+.foot-content .foot i
+{
+   margin-bottom: 10px;
+} 
+.foot-content .foot i p
+{
+    margin-left: 10px;
+}
+.foot-content .foot .first-child
+{
+    margin-bottom: 30px;
+}
+
+/* end first div  */
+/* start second div  */
+.foot-socialandlogo
+{
+    background: #353330;
+    padding-top: 5%;
+    text-align: center;
+}
+.foot-socialandlogo img
+{
+    width: 200px;
+}
+.foot-socialandlogo h1
+{
+    display: inline-block;
+    font-size: 8em;
+    color: #fff;
+    transform: translate(-5%, -30%);
+    font-family: 'Alegreya Sans';
+    font-weight: 100;
+    margin: 0;
+}
+.foot-socialandlogo p
+{
+    color: #8C8A86;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.foot-socialandlogo i
+{
+    font-size: 30px;
+    margin: 2%;
+    width: 50px;
+    height: 50px;
+    background: #484540;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.foot-socialandlogo .fa-facebook-f:hover 
+{
+    color: #fff;
+    background: #0275d8;
+}
+.foot-socialandlogo .fa-google-plus-g:hover 
+{
+    color: #fff;
+    background: #CE493B;
+}
+.foot-socialandlogo .fa-linkedin-in:hover 
+{
+    color: #fff;
+    background: #0270AD;
+}
+.foot-socialandlogo .fa-twitter:hover 
+{
+    color: #fff;
+    background: #29A4D9;
+}
+/* end secon div  */
+/* end footer  */
