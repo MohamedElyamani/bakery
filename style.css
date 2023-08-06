@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* -----------start global stylying---------------- */
+.container{
+    width: 85%;
+    margin: auto;
+}
+.clr{
+    clear: both;
+}
+section{
+    padding: 2% 0;
+}
+p{
+    line-height: 30px;
+    font-size: 20px;
+    color: #9C9C9C;
+}
+h2{
+    font-size: 30px;
+    color: #575757;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+/* -----------end global stylying---------------- */
+
+
+/* -----------start header---------------- */
+header{
+    background-image: url(img/bg-header.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    /* ------ this is margin collaps because when i give class title margin it takes all header with it so this padding solve this problem----- */
+    overflow: auto;
+}
+.nav{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header .logo img{
+    width: 120px;
+    margin: 15px 0;
+    float: left;
+}
+header .link{
+    float: right;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    float: left;
+    padding: 15px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.4s;
+}
+header ul li:hover a{
+    color: #8f7854;
+}
+header .bar{
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 99999;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.356);
+}
+.title{
+    margin-top: 15%;
+    text-align: center;
+    color: #fff;
+}
+.title p{
+    color: #fff !important;
+}
+.title h1{
+    font-size: 55px;
+    margin: 10px 0;
+}
+.title button{
+    padding: 15px 20px;
+    margin: 15px ;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.title .btn1{
+   background: #8E7754; 
+}
+.title .btn2{
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all 0.4s;
+}
+.btn2:hover{
+    background: #8E7754;
+    border: 2px solid #8E7754;
+}
+/* -----------end header---------------- */
+
+/* --------------------start our location and who are we section-------------- */
+.who-img,
+.loca-img{
+    width: 40%;
+    margin-top: 50px;
+}
+.who-img img,
+.loca-img img{
+    width: 100%;
+}
+.who-info,
+.loca-info{
+    width: 60%;
+}
+.who-info{
+    padding-left: 8%;
+    margin-top: 50px;
+}
+.loca-info{
+    padding-right: 8%;
+    margin-top: 50px;
+}
+.our-location{
+    background: #F8F8F8;
+    margin: 30px 0;
+}
+.who-info{
+    float: right;
+}
+.loca-info{
+    float: left;
+}
+.who-img{
+    float: left;
+}
+.loca-img{
+    float: right;
+}
+
+/* ------------- start style of icon ------------- */
+.icon{
+    width: 10%;
+    float: left;
+}
+.icon img{
+    width: 100%;
+}
+.text{
+    width: 90%;
+    float: right;
+}
+.text p{
+    margin: 15px 0 0 15px;
+}
+/* --------------------end our location and who are we section-------------- */
+
+/* --------------------start baking items 
+section-------------- */
+
+.bake-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.item{
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 15px;
+}
+.item img{
+    width: 100%;
+}
+.item h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #575757;
+}
+/* --------------------end start baking items section-------------- */
+
+/* --------------------start contact section-------------- */
+.contact{
+    background: #F8F8F8;
+}
+.contact-info,
+.contact-map{
+    margin-top: 50px;
+}
+.contact-info{
+    float: left;
+    width: 50%;
+}
+.contact-map{
+    float: right;
+    width: 50%;
+}
+.contact-map iframe{
+    width: 80%;
+    margin-left: 50px;
+}
+
+/* --------------------end contact section-------------- */
+/* --------------------start footer-------------- */
+.foot{
+    background-color: #403D38;
+    color:#928f8f;
+}
+.foot-info{
+    float: left;
+    width: 25%;
+    padding: 30px 15px;
+}
+.foot-info h4{
+    font-size: 20px;
+    color: #fff;
+}
+.foot-info span{
+    margin-right: 7px;
+}
+.foot-info p{
+    font-size: 14px;
+    margin: 15px;
+}
+.line{
+    background: #4A4742;
+    height: 1px;
+    width: 90%;
+}
+/* .earth{
+    background-image: url(img/contact-details-mapp.png);
+    background-repeat: no-repeat;
+} */
+/* --------------------end footer-------------- */
+
+
+/* --------------------start footer for logo section-------------- */
+.foot-logo{
+    height: 450px;
+    background-color: #353330;
+    text-align: center;
+}
+.foot-logo img{
+    margin: 8% 0 0 0;
+}
+.foot-logo p{
+    margin: 15px;
+    font-size: 12px;
+    color: #928f8f;
+}
+.foot-logo .social{
+    margin: 0;
+}
+/* --------------------end footer for logo section-------------- */
+
+
+
+
+/* --------------------start media query-------------- */
+@media screen and (max-width: 568px){
+    header .logo img{
+        text-align: center; 
+        /* -------- it dosn't work tell me why in feedbakc plz------- */
+    }
+    header .title{
+        margin-top: 30%;
+    }
+    header ul li {
+        padding: 8px;
+    }
+    .who-img,
+    .loca-img,
+    .item,
+    .contact-map,
+    .foot-info{
+        width: 100%;
+    }
+    .who-info,
+    .loca-info,
+    .contact-info{
+        width: 100%;
+        padding: 0%;
+    }
+
+}
+@media screen and (min-width: 569px) and (max-width: 768px){
+    header .title{
+        margin-top: 30%;
+    }
+    .who-img,
+    .loca-img,
+    .item,
+    .contact-map,
+    .foot-info{
+        width: 100%;
+    }
+    .who-info,
+    .loca-info,
+    .contact-info{
+        width: 100%;
+        padding: 0%;
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .who-img img,
+    .loca-img img{
+        margin-top: 30%;
+    }
+    .item{
+        width: 50%;
+    }
+    .foot-info{
+        width: 50%;
+    }
+    .foot-info p{
+        font-size: 17px;
+    }
+}
+
+
+/* --------------------end media query-------------- */
+
+
+
